@@ -1,0 +1,10 @@
+body {
+    background-color: red;
+}
+
+/* Tablet (até 768px) */
+@media screen and (max-width: 768px) {
+    body{
+        background-color: blue;
+    }
+}
