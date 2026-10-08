@@ -1,10 +1,141 @@
-body {
+/**body {
     background-color: red;
 }
 
 /* Tablet (até 768px) */
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     body{
         background-color: blue;
     }
+}
+
+/* Mobile (até 480px) */
+/*@media screen and (max-width: 480px) {
+    body{
+        background-color: green;
+    }
+}
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.topo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #2d3a8c;
+    color: white;
+}
+
+.topo nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    
+}
+
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Desktop: foto ao lado do texto */
+.sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 40px;
+}
+
+.foto{
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: url(../Imagem/simon\ lovelace\ aesthetic.jfif);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+/* Desktop: 3 cards lado a lado */
+.projetos{
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.card{
+    flex: 1;
+    background-color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #2d3a8c;
+    color: white;
+}
+
+/*Tablet*/
+@media (max-width: 768px){
+    .sobre{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projetos{
+        flex-direction: column;
+    }
+}
+
+/*celular*/
+@media (max-width: 480px){
+    .topo{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .topo nav a{
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .foto{
+        width: 140px;   
+        height: 140px;
+    }
+}
+
+.Corporate{
+    text-align: center;
+    padding: 20px;
+    text-align: center;
+    color: black;
 }
